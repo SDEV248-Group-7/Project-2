@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmunvmrx55ed7"]
+
+[ext_resource type="Script" uid="uid://bly1vmxl8ixmw" path="res://Enemies/Spider/spider.gd" id="1_3rws8"]
+[ext_resource type="Texture2D" uid="uid://btyj7catf6wgh" path="res://Enemies/Spider/spider3.png" id="2_55ryt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vpcmn"]
+size = Vector2(69, 36)
+
+[node name="Spider" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_3rws8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 9)
+shape = SubResource("RectangleShape2D_vpcmn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_55ryt")

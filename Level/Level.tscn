@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b3sqminhccajt" path="res://Level/level.gd" id="1_i5eh5"]
 [ext_resource type="PackedScene" uid="uid://csy1p1fun4xlj" path="res://Player/player.tscn" id="2_r3cbp"]
 [ext_resource type="Script" uid="uid://l5p0pjk0l2ai" path="res://Level/exit.gd" id="3_cyxyq"]
-[ext_resource type="PackedScene" uid="uid://cbfpcsv3og1di" path="res://Enemies/Bat/greater_bat.tscn" id="5_5noo7"]
+[ext_resource type="PackedScene" uid="uid://cbfpcsv3og1di" path="res://Enemies/Spider/greater_spider.tscn" id="5_5noo7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i5eh5"]
 size = Vector2(90, 413)
@@ -37,12 +37,23 @@ metadata/_edit_group_ = true
 position = Vector2(35, -196.5)
 shape = SubResource("RectangleShape2D_i5eh5")
 
-[node name="GreaterBat" parent="." groups=["enemies"] instance=ExtResource("5_5noo7")]
-position = Vector2(-441, -452)
+[node name="GreaterSpider" parent="." instance=ExtResource("5_5noo7")]
+position = Vector2(-630, -563)
 
-[node name="Bat" parent="GreaterBat" index="2" groups=["enemies"]]
+[node name="Spider" parent="GreaterSpider" index="2" groups=["enemies"]]
+
+[node name="GreaterSpider2" parent="." instance=ExtResource("5_5noo7")]
+position = Vector2(190, -117)
+
+[node name="MarkerL" parent="GreaterSpider2" index="0"]
+position = Vector2(-110, 0)
+
+[node name="MarkerR" parent="GreaterSpider2" index="1"]
+position = Vector2(122, 0)
 
 [connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]
 
-[editable path="GreaterBat"]
-[editable path="GreaterBat/Bat"]
+[editable path="GreaterSpider"]
+[editable path="GreaterSpider/Spider"]
+[editable path="GreaterSpider2"]
+[editable path="GreaterSpider2/Spider"]

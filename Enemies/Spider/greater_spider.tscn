@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbfpcsv3og1di"]
+
+[ext_resource type="PackedScene" uid="uid://bmunvmrx55ed7" path="res://Enemies/Spider/spider.tscn" id="1_04k4e"]
+[ext_resource type="Script" uid="uid://c62twkcks3o8f" path="res://Enemies/Spider/greater_spider.gd" id="1_sjm14"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_04k4e"]
+
+[node name="GreaterSpider" type="Node2D"]
+script = ExtResource("1_sjm14")
+
+[node name="MarkerL" type="Area2D" parent="."]
+position = Vector2(-245, 0)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarkerL"]
+shape = SubResource("CircleShape2D_04k4e")
+
+[node name="MarkerR" type="Area2D" parent="."]
+position = Vector2(159, 0)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarkerR"]
+shape = SubResource("CircleShape2D_04k4e")
+
+[node name="Spider" parent="." groups=["Self"] instance=ExtResource("1_04k4e")]
+collision_mask = 11
+
+[connection signal="body_entered" from="MarkerL" to="." method="_on_marker_l_body_entered"]
+[connection signal="body_entered" from="MarkerR" to="." method="_on_marker_r_body_entered"]
+
+[editable path="Spider"]
