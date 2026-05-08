@@ -67,6 +67,7 @@ grow_vertical = 2
 texture_normal = ExtResource("3_1610v")
 texture_hover = ExtResource("4_jwyv8")
 script = ExtResource("5_ex87a")
+where_to = "res://Level/Level.tscn"
 
 [node name="Back" type="TextureButton" parent="."]
 layout_mode = 1
