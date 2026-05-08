@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7aa41o07j5rq"]
+[gd_scene load_steps=11 format=3 uid="uid://b7aa41o07j5rq"]
 
 [ext_resource type="Script" uid="uid://dbpcv6bfb6swn" path="res://Non-Game-Scenes/Buttons/button_base.gd" id="1_80qxb"]
 [ext_resource type="Texture2D" uid="uid://bb1lc3l16tosw" path="res://Non-Game-Scenes/Buttons/Start/Start_base.png" id="1_gyiiy"]
+[ext_resource type="Texture2D" uid="uid://bkv5m68ja0fb2" path="res://Non-Game-Scenes/Menu_Background.png" id="1_t8bvc"]
 [ext_resource type="Texture2D" uid="uid://smipbfr6xcan" path="res://Non-Game-Scenes/Buttons/Start/Start_Hover.png" id="2_v68rj"]
 [ext_resource type="Script" uid="uid://brx4qhobf3wtw" path="res://Non-Game-Scenes/Buttons/quit.gd" id="2_yowv5"]
 [ext_resource type="Texture2D" uid="uid://b0lphhxdredfq" path="res://Non-Game-Scenes/Buttons/Credits/Credits_Base.png" id="5_o3axh"]
@@ -24,6 +25,8 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(3.003, 3.00393)
+texture = ExtResource("1_t8bvc")
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
