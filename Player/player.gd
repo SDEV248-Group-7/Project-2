@@ -4,9 +4,9 @@ const SPEED = 450
 const JUMP_VELOCITY = -750
 const GRAVITY = 1500
 
-signal fail;
-
 @onready var sprite = $AnimatedSprite2D
+
+@onready var fail = preload("res://Non-Game-Scenes/Fail.tscn")
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -30,4 +30,4 @@ func _physics_process(delta):
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i);
 		if collision.get_collider().is_in_group("enemies"):
-			fail.emit();
+			get_tree().change_scene_to_packed(fail);

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://cjr5bup4hy0xt"]
+[gd_scene load_steps=7 format=4 uid="uid://cjr5bup4hy0xt"]
 
 [ext_resource type="TileSet" uid="uid://dbxddjl285qao" path="res://Level/Environment.tres" id="1_a526m"]
 [ext_resource type="Script" uid="uid://b3sqminhccajt" path="res://Level/level.gd" id="1_i5eh5"]
 [ext_resource type="PackedScene" uid="uid://csy1p1fun4xlj" path="res://Player/player.tscn" id="2_r3cbp"]
 [ext_resource type="Script" uid="uid://l5p0pjk0l2ai" path="res://Level/exit.gd" id="3_cyxyq"]
+[ext_resource type="PackedScene" uid="uid://cbfpcsv3og1di" path="res://Enemies/Bat/greater_bat.tscn" id="5_5noo7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i5eh5"]
 size = Vector2(90, 413)
@@ -36,5 +37,12 @@ metadata/_edit_group_ = true
 position = Vector2(35, -196.5)
 shape = SubResource("RectangleShape2D_i5eh5")
 
-[connection signal="fail" from="Player" to="." method="_on_player_fail"]
+[node name="GreaterBat" parent="." groups=["enemies"] instance=ExtResource("5_5noo7")]
+position = Vector2(-441, -452)
+
+[node name="Bat" parent="GreaterBat" index="2" groups=["enemies"]]
+
 [connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]
+
+[editable path="GreaterBat"]
+[editable path="GreaterBat/Bat"]
