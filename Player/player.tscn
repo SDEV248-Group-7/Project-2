@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://csy1p1fun4xlj"]
+
+[ext_resource type="Script" uid="uid://bikv7kg45uc4j" path="res://Player/player.gd" id="1_k53q1"]
+[ext_resource type="Texture2D" uid="uid://dun7uj77awwa4" path="res://Player/boy_walking_1.png" id="2_fhl08"]
+[ext_resource type="Texture2D" uid="uid://bmkmqfoxvp3vb" path="res://Player/boy_walking_3.png" id="3_vtle1"]
+[ext_resource type="Texture2D" uid="uid://d1wkmy3sib85r" path="res://Player/boy_walking_4.png" id="4_od3ui"]
+[ext_resource type="Texture2D" uid="uid://cptsltsnakexx" path="res://Player/boy_walking_2.png" id="5_00tjw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n7ghd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fhl08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vtle1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_od3ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_00tjw")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sweqy"]
+size = Vector2(50, 82)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_k53q1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_n7ghd")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 9)
+shape = SubResource("RectangleShape2D_sweqy")
