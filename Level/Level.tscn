@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://cjr5bup4hy0xt"]
+[gd_scene load_steps=6 format=4 uid="uid://cjr5bup4hy0xt"]
 
 [ext_resource type="TileSet" uid="uid://dbxddjl285qao" path="res://Level/Environment.tres" id="1_a526m"]
+[ext_resource type="Script" uid="uid://b3sqminhccajt" path="res://Level/level.gd" id="1_i5eh5"]
 [ext_resource type="PackedScene" uid="uid://csy1p1fun4xlj" path="res://Player/player.tscn" id="2_r3cbp"]
 [ext_resource type="Script" uid="uid://l5p0pjk0l2ai" path="res://Level/exit.gd" id="3_cyxyq"]
 
@@ -8,6 +9,7 @@
 size = Vector2(90, 413)
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_i5eh5")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_top = -2.0
@@ -34,4 +36,5 @@ metadata/_edit_group_ = true
 position = Vector2(35, -196.5)
 shape = SubResource("RectangleShape2D_i5eh5")
 
+[connection signal="fail" from="Player" to="." method="_on_player_fail"]
 [connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]
