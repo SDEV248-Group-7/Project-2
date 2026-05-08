@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=4 uid="uid://cjr5bup4hy0xt"]
+[gd_scene load_steps=9 format=4 uid="uid://cjr5bup4hy0xt"]
 
 [ext_resource type="TileSet" uid="uid://dbxddjl285qao" path="res://Level/Environment.tres" id="1_a526m"]
 [ext_resource type="Script" uid="uid://b3sqminhccajt" path="res://Level/level.gd" id="1_i5eh5"]
+[ext_resource type="Texture2D" uid="uid://bklrnbbopxbw3" path="res://Level/Background.png" id="2_j3llj"]
 [ext_resource type="PackedScene" uid="uid://csy1p1fun4xlj" path="res://Player/player.tscn" id="2_r3cbp"]
 [ext_resource type="Script" uid="uid://l5p0pjk0l2ai" path="res://Level/exit.gd" id="3_cyxyq"]
 [ext_resource type="PackedScene" uid="uid://cbfpcsv3og1di" path="res://Enemies/Spider/greater_spider.tscn" id="5_5noo7"]
@@ -14,9 +15,12 @@ size = Vector2(90, 413)
 script = ExtResource("1_i5eh5")
 
 [node name="Background" type="TextureRect" parent="."]
-offset_top = -2.0
-offset_right = 40.0
-offset_bottom = 38.0
+offset_left = -1158.0
+offset_top = -655.0
+offset_right = -130.0
+offset_bottom = 373.0
+scale = Vector2(2.29491, 1.27575)
+texture = ExtResource("2_j3llj")
 stretch_mode = 1
 
 [node name="Environment" type="TileMapLayer" parent="."]
