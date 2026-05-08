@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pu0i1676lp3o"
-path="res://.godot/imported/spider2.png-45b550d694fe394486d862d5d76c8035.ctex"
+uid="uid://smipbfr6xcan"
+path="res://.godot/imported/Start_Hover.png-d801537154774ce9c4f00dfc84b64701.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spider2.png"
-dest_files=["res://.godot/imported/spider2.png-45b550d694fe394486d862d5d76c8035.ctex"]
+source_file="res://Non-Game-Scenes/Buttons/Start/Start_Hover.png"
+dest_files=["res://.godot/imported/Start_Hover.png-d801537154774ce9c4f00dfc84b64701.ctex"]
 
 [params]
 

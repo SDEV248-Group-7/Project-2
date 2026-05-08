@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd7yssb7v28om"
-path="res://.godot/imported/spider.png-96ad53aa9f5886aa5f95b126fb3f9337.ctex"
+uid="uid://dg8f0d41jjj5"
+path="res://.godot/imported/Retry_Hover.png-6e296ec9315b4e08e37a46053a6546bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spider.png"
-dest_files=["res://.godot/imported/spider.png-96ad53aa9f5886aa5f95b126fb3f9337.ctex"]
+source_file="res://Non-Game-Scenes/Buttons/Retry/Retry_Hover.png"
+dest_files=["res://.godot/imported/Retry_Hover.png-6e296ec9315b4e08e37a46053a6546bf.ctex"]
 
 [params]
 

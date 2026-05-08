@@ -11,7 +11,14 @@ config_version=5
 [application]
 
 config/name="Project 2"
+run/main_scene="uid://b7aa41o07j5rq"
 config/features=PackedStringArray("4.4", "Forward Plus")
+
+[layer_names]
+
+2d_physics/layer_1="Environment"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
 
 [physics]
 

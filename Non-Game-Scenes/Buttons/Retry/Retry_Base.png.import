@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b05p76er8dgfx"
-path="res://.godot/imported/bat1.png-a3b44988637fd847d580e0d5c264a769.ctex"
+uid="uid://cvl0xab7ibu84"
+path="res://.godot/imported/Retry_Base.png-fbf7a13f819b672e2c40148db6ab8fc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bat1.png"
-dest_files=["res://.godot/imported/bat1.png-a3b44988637fd847d580e0d5c264a769.ctex"]
+source_file="res://Non-Game-Scenes/Buttons/Retry/Retry_Base.png"
+dest_files=["res://.godot/imported/Retry_Base.png-fbf7a13f819b672e2c40148db6ab8fc3.ctex"]
 
 [params]
 

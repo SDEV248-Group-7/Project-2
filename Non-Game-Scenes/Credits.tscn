@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://ceu8wlwek13pq"]
+
+[ext_resource type="LabelSettings" uid="uid://dipa14kp1bmw3" path="res://Non-Game-Scenes/LabelSettings/Story_Titles.tres" id="1_ivr8j"]
+[ext_resource type="LabelSettings" uid="uid://dp0qxtwbo8c8w" path="res://Non-Game-Scenes/LabelSettings/Story_Text.tres" id="2_qx6ar"]
+[ext_resource type="Script" uid="uid://dbpcv6bfb6swn" path="res://Non-Game-Scenes/Buttons/button_base.gd" id="5_osetw"]
+[ext_resource type="Texture2D" uid="uid://cmugvwigovn1b" path="res://Non-Game-Scenes/Buttons/Back/Back_Base.png" id="6_c8e7e"]
+[ext_resource type="Texture2D" uid="uid://bobx4avibyc5j" path="res://Non-Game-Scenes/Buttons/Back/Back_Hover.png" id="7_kdmhs"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -287.0
+offset_right = 61.0
+offset_bottom = -217.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Credits"
+label_settings = ExtResource("1_ivr8j")
+
+[node name="StoryText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -148.0
+offset_right = 86.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Developed By: 
+Jacob Brown
+Cailey Keown
+
+Assets Credits:
+"
+label_settings = ExtResource("2_qx6ar")
+
+[node name="Back" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 225.0
+offset_right = 64.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_c8e7e")
+texture_hover = ExtResource("7_kdmhs")
+script = ExtResource("5_osetw")
+where_to = "res://Non-Game-Scenes/Menu.tscn"

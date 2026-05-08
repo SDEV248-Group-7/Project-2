@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cptsltsnakexx"
-path="res://.godot/imported/boy_walking_2.png-f19cce2f709e3a3d5a92cd6f44e8622a.ctex"
+uid="uid://ccsjdovxvmtx5"
+path="res://.godot/imported/Credits_Hover.png-0990303b0919398e5b3f5ec61e145169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://boy_walking_2.png"
-dest_files=["res://.godot/imported/boy_walking_2.png-f19cce2f709e3a3d5a92cd6f44e8622a.ctex"]
+source_file="res://Non-Game-Scenes/Buttons/Credits/Credits_Hover.png"
+dest_files=["res://.godot/imported/Credits_Hover.png-0990303b0919398e5b3f5ec61e145169.ctex"]
 
 [params]
 

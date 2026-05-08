@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://b6gw8755lxrly"]
+
+[ext_resource type="LabelSettings" uid="uid://dipa14kp1bmw3" path="res://Non-Game-Scenes/LabelSettings/Story_Titles.tres" id="1_biiym"]
+[ext_resource type="LabelSettings" uid="uid://dp0qxtwbo8c8w" path="res://Non-Game-Scenes/LabelSettings/Story_Text.tres" id="2_dlw8d"]
+[ext_resource type="Texture2D" uid="uid://cvl0xab7ibu84" path="res://Non-Game-Scenes/Buttons/Retry/Retry_Base.png" id="3_1610v"]
+[ext_resource type="Texture2D" uid="uid://dg8f0d41jjj5" path="res://Non-Game-Scenes/Buttons/Retry/Retry_Hover.png" id="4_jwyv8"]
+[ext_resource type="Script" uid="uid://dbpcv6bfb6swn" path="res://Non-Game-Scenes/Buttons/button_base.gd" id="5_ex87a"]
+[ext_resource type="Texture2D" uid="uid://cmugvwigovn1b" path="res://Non-Game-Scenes/Buttons/Back/Back_Base.png" id="6_t4qol"]
+[ext_resource type="Texture2D" uid="uid://bobx4avibyc5j" path="res://Non-Game-Scenes/Buttons/Back/Back_Hover.png" id="7_u5n4m"]
+
+[node name="Fail" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -287.0
+offset_right = 61.0
+offset_bottom = -217.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Failure"
+label_settings = ExtResource("1_biiym")
+
+[node name="StoryText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -169.0
+offset_right = 20.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = ExtResource("2_dlw8d")
+
+[node name="Retry" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 137.0
+offset_right = 64.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_1610v")
+texture_hover = ExtResource("4_jwyv8")
+script = ExtResource("5_ex87a")
+
+[node name="Back" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 225.0
+offset_right = 64.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_t4qol")
+texture_hover = ExtResource("7_u5n4m")
+script = ExtResource("5_ex87a")
+where_to = "res://Non-Game-Scenes/Menu.tscn"

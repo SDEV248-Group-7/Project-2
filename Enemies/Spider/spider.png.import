@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmkmqfoxvp3vb"
-path="res://.godot/imported/boy_walking_3.png-ad73ad56a98dce119dc45c039c643d10.ctex"
+uid="uid://bd7yssb7v28om"
+path="res://.godot/imported/spider.png-bef025f902bd9adf926c51ec7d1ece64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://boy_walking_3.png"
-dest_files=["res://.godot/imported/boy_walking_3.png-ad73ad56a98dce119dc45c039c643d10.ctex"]
+source_file="res://Enemies/Spider/spider.png"
+dest_files=["res://.godot/imported/spider.png-bef025f902bd9adf926c51ec7d1ece64.ctex"]
 
 [params]
 

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjr5bup4hy0xt"]
+
+[ext_resource type="TileSet" uid="uid://dbxddjl285qao" path="res://Level/Environment.tres" id="1_a526m"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_top = -2.0
+offset_right = 40.0
+offset_bottom = 38.0
+
+[node name="Environment" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_a526m")

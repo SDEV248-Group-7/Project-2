@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1wkmy3sib85r"
-path="res://.godot/imported/boy_walking_4.png-a25d20471d108d41436826e4005cc6fd.ctex"
+uid="uid://b3kcgutdggbao"
+path="res://.godot/imported/Quit_Hover.png-1940533dc692e110ae75583067f64810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://boy_walking_4.png"
-dest_files=["res://.godot/imported/boy_walking_4.png-a25d20471d108d41436826e4005cc6fd.ctex"]
+source_file="res://Non-Game-Scenes/Buttons/Quit/Quit_Hover.png"
+dest_files=["res://.godot/imported/Quit_Hover.png-1940533dc692e110ae75583067f64810.ctex"]
 
 [params]
 
