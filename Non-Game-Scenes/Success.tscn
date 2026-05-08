@@ -3,9 +3,9 @@
 [ext_resource type="LabelSettings" uid="uid://dipa14kp1bmw3" path="res://Non-Game-Scenes/LabelSettings/Story_Titles.tres" id="1_81v0u"]
 [ext_resource type="Texture2D" uid="uid://bkv5m68ja0fb2" path="res://Non-Game-Scenes/Menu_Background.png" id="1_psxh3"]
 [ext_resource type="LabelSettings" uid="uid://dp0qxtwbo8c8w" path="res://Non-Game-Scenes/LabelSettings/Story_Text.tres" id="2_psxh3"]
-[ext_resource type="Texture2D" uid="uid://bb1lc3l16tosw" path="res://Non-Game-Scenes/Buttons/Start/Start_base.png" id="3_mrumi"]
-[ext_resource type="Texture2D" uid="uid://smipbfr6xcan" path="res://Non-Game-Scenes/Buttons/Start/Start_Hover.png" id="4_g34xt"]
+[ext_resource type="Texture2D" uid="uid://cvl0xab7ibu84" path="res://Non-Game-Scenes/Buttons/Retry/Retry_Base.png" id="4_psxh3"]
 [ext_resource type="Script" uid="uid://dbpcv6bfb6swn" path="res://Non-Game-Scenes/Buttons/button_base.gd" id="5_h2f2c"]
+[ext_resource type="Texture2D" uid="uid://dg8f0d41jjj5" path="res://Non-Game-Scenes/Buttons/Retry/Retry_Hover.png" id="5_mrumi"]
 [ext_resource type="Texture2D" uid="uid://cmugvwigovn1b" path="res://Non-Game-Scenes/Buttons/Back/Back_Base.png" id="6_srw3g"]
 [ext_resource type="Texture2D" uid="uid://bobx4avibyc5j" path="res://Non-Game-Scenes/Buttons/Back/Back_Hover.png" id="7_wqwea"]
 
@@ -68,8 +68,8 @@ offset_right = 64.0
 offset_bottom = 201.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("3_mrumi")
-texture_hover = ExtResource("4_g34xt")
+texture_normal = ExtResource("4_psxh3")
+texture_hover = ExtResource("5_mrumi")
 script = ExtResource("5_h2f2c")
 where_to = "res://Level/Level.tscn"
 

@@ -37,6 +37,7 @@ texture_region_size = Vector2i(64, 64)
 1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7601, 30.7356, 32.9639, -32.0001, -31.7601, -32.1016)
 
 [resource]
+tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
 sources/1 = SubResource("TileSetAtlasSource_wma4x")
