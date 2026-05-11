@@ -14,6 +14,10 @@ config/name="Project 2"
 run/main_scene="uid://b7aa41o07j5rq"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[autoload]
+
+GameManager="*res://GameManager.gd"
+
 [input]
 
 move_left={

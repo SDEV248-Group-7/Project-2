@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl0p5i6jowetc"]
+
+[ext_resource type="Script" uid="uid://ce5ta4vuc7405" path="res://lantern.gd" id="1_aeluj"]
+[ext_resource type="Texture2D" uid="uid://btsi3uvpd4co0" path="res://Cursed_Lantern.png" id="1_kxgpu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aeluj"]
+size = Vector2(24, 30)
+
+[node name="Lantern" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_aeluj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kxgpu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_aeluj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj12x5ohmpfcv"]
+
+[ext_resource type="Script" uid="uid://ivmkm1o33i3i" path="res://hud.gd" id="1_37p78"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_64ctp"]
+font_size = 20
+font_color = Color(0.782804, 0.504923, 1.92523e-06, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_37p78")
+
+[node name="LanternLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_64ctp")
